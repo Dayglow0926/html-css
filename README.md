@@ -14,6 +14,10 @@
 
 ## CSS
 
+- [How to Add CSS](https://dayglow0926.notion.site/How-to-Add-CSS-76d4cebb52d443f28c9a9ee5636c637d)
+- [How to write CSS and Selector](https://dayglow0926.notion.site/How-to-write-CSS-and-Selector-abe4ccf02ed64bca9bc1f17a17ea2b61)
+- [block and inline](https://dayglow0926.notion.site/block-and-inlines-6e43ddc8120649ceb0cac9740ae4ee39)
+
 ## Result
 
 - [MokokoTalk](https://github.com/Dayglow0926/mokoko-talk-clone-2022)
