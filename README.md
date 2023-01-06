@@ -18,6 +18,7 @@
 - [How to write CSS and Selector](https://dayglow0926.notion.site/How-to-write-CSS-and-Selector-abe4ccf02ed64bca9bc1f17a17ea2b61)
 - [block and inline](https://dayglow0926.notion.site/block-and-inlines-6e43ddc8120649ceb0cac9740ae4ee39)
 - [margin, padding and border](https://dayglow0926.notion.site/margin-padding-and-border-3fbf11fbf84b4a7f805ba7814e250464)
+- [flexbox](https://dayglow0926.notion.site/flexbox-a20f4ccddae040abb6322d4496417ed1)
 
 ## Result
 
