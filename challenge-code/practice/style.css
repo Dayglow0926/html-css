@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.library {
+  position: relative;
+  background-color: #fcfcfc;
+  width: 400px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  border: 0.1px solid white;
+}
+
+.library header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+}
+.library .library-header {
+  background-color: #ffce32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  position: relative;
+  padding: 30px 15px;
+  border: 0.5px solid white;
+  box-shadow: 0px 3px 10px 0.1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-weight: 700;
+}
+
+.library .library-header-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.library .library-header-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -20px;
+  width: inherit;
+  height: 40px;
+  padding: 0px 15px;
+}
+
+.library .library-header-search input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0px solid;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px 0.1px rgba(0, 0, 0, 0.02);
+  padding: 0px 30px;
+  margin: 0;
+}
+
+.library .library-header-search i {
+  position: absolute;
+  right: 25px;
+  opacity: 0.1;
+}
+
+.library main {
+  width: inherit;
+  height: 100%;
+  padding: 15px;
+}
+
+/*library main*/
+.library-main .sub-title {
+  display: block;
+  width: inherit;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px 0px;
+}
+
+.library-main .library-main-book {
+  border-radius: 10px;
+  width: 155px;
+  height: 230px;
+  background-color: white;
+  margin-right: 20px;
+  overflow: hidden;
+  border: 3px solid #ffce32;
+}
+
+.library-main-content:nth-child(1) > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.library-main-content:nth-child(3) > div {
+  display: flex;
+  width: inherit;
+  justify-content: flex-start;
+}
+
+.library-main-book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.library-main-book-info > span {
+  margin-bottom: 8px;
+}
+
+.library-main-book-info > span:nth-child(1) {
+  font-size: 25px;
+  font-weight: 600;
+}
+.library-main-book-info > span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.3;
+}
+
+.book-author {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.book-author span {
+  display: block;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.book-rating {
+  color: #ffce32;
+}
+.book-rating i.no-star {
+  color: darkgray;
+  opacity: 0.5;
+}
+
+.library-main-book-button {
+  display: flex;
+  justify-content: space-between;
+}
+.library-main-book-button .library-main-book-button__bookmark {
+  background-color: #ffce32;
+  padding: 10px 13px;
+  border-radius: 50%;
+}
+.library-main-book-button .library-main-book-button__booknow {
+  background-color: black;
+  color: white;
+  border: 0px;
+  padding: 10px 30px;
+  border-radius: 7px;
+}
+
+.library-sub-book {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #ffce32;
+}
+.library-book-list {
+  width: inherit;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.library-book-list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 8px;
+}
+
+.library-book-list .book-rating > i {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.author-info {
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
+.author-info__profile {
+  background-color: #ffce32;
+  width: 120px;
+  height: 150px;
+  border-radius: 15px;
+  margin-right: 20px;
+  overflow: hidden;
+  border: 3px solid #ffce32;
+}
+.author-info__talk {
+  width: calc(370px - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.author-info__talk > span {
+  word-wrap: break-word;
+  font-size: 25px;
+  font-weight: 600;
+}
+.author-info__talk > p {
+  word-wrap: break-word;
+  line-height: 1.3em;
+  opacity: 0.3;
+  font-weight: 600;
+}
