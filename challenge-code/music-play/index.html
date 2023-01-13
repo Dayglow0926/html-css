@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="right-style.css" />
   </head>
   <body>
-    <div class="playlist" style="display: none">
+    <div class="playlist">
       <div class="playlist-background-img">
         <img
           src="https://cdnimg.melon.co.kr/cm2/album/images/103/72/085/10372085_20200106153324_500.jpg?ebc0e64b101670deec3305feb51fd22d"
@@ -180,22 +180,28 @@
       </footer>
     </div>
     <div class="play-music">
-      <header>
-        <div class="header-left-icon">
-          <i class="fa-solid fa-chevron-left"></i>
-          <span>윤하</span>
+      <div class="play-music-header">
+        <div class="play-music-header-fixed">
+          <div class="play-music-header-left-icon">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="play-music-header-type">
+            <div>
+              <span class="on">노래</span>
+              <span class="">동영상</span>
+            </div>
+          </div>
+          <div class="header-right-icon">
+            <i class="fa-solid fa-house-signal"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
         </div>
-        <div class="header-right-icon">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          <i class="fa-solid fa-house-signal"></i>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-      </header>
-      <main>
+      </div>
+      <div class="play-music-main">
         <div class="play-music-main-title">
           <div class="play-music-main-title__img">
             <img
-              src="https://cdnimg.melon.co.kr/cm2/album/images/103/72/085/10372085_20200106153324_500.jpg?ebc0e64b101670deec3305feb51fd22d"
+              src="https://image.bugsm.co.kr/album/images/200/40734/4073469.jpg?version=20230110005119.0"
               alt=""
             />
           </div>
@@ -208,49 +214,38 @@
             <i class="fa-solid fa-thumbs-up"></i>
           </div>
         </div>
-        <div class=""></div>
-      </main>
-      <footer>
-        <div class="footer-fixed">
-          <div class="music-play">
-            <div class="music-play-info">
-              <div>
-                <div class="music-play-info__img">
-                  <img
-                    src="https://image.bugsm.co.kr/album/images/200/40734/4073469.jpg?version=20230110005119.0"
-                    alt=""
-                  />
-                </div>
-                <div class="music-play-info__title">
-                  <span>사건의 지평선</span>
-                  <span>윤하</span>
-                </div>
-              </div>
-              <div class="music-play-info__button">
-                <button><i class="fa-solid fa-play"></i></button>
-                <button><i class="fa-solid fa-forward-step"></i></button>
-              </div>
-            </div>
-            <div class="music-play-bar">
-              <input type="range" min="0" max="100" value="10" />
-            </div>
+        <div class="play-music-playbar">
+          <input type="range" min="0" max="100" value="1" />
+          <div class="music-play-bar__time">
+            <span>0:01</span>
+            <span>5:01</span>
           </div>
-          <div class="footer-button">
-            <div class="footer-button__home">
-              <i class="fa-solid fa-house"></i>
-              <span>홈</span>
+        </div>
+        <div class="play-music-button">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-angles-left"></i>
+          <div class="play-button__big">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <i class="fa-solid fa-angles-right"></i>
+          <i class="fa-solid fa-rotate-left"></i>
+        </div>
+      </div>
+      <div class="play-music-footer">
+        <div class="play-music-footer-fixed">
+          <div class="play-music-footer-button">
+            <div class="play-music-footer-button__home">
+              <span>다음 트랙</span>
             </div>
-            <div class="footer-button__search">
-              <i class="fa-regular fa-compass"></i>
-              <span>둘러보기</span>
+            <div class="play-music-footer-button__search">
+              <span>가사</span>
             </div>
-            <div class="footer-button__storage">
-              <i class="fa-solid fa-box-archive"></i>
-              <span>보관함</span>
+            <div class="play-music-footer-button__storage">
+              <span>관련 항목</span>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
     <script
       src="https://kit.fontawesome.com/a4852596ef.js"

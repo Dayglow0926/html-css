@@ -1,49 +1,90 @@
 .play-music {
-  width: 100%;
+  width: 500px;
+
   max-width: 500px;
   min-width: 500px;
   height: inherit;
   position: relative;
   overflow-y: scroll;
+  background-color: #401b13;
 }
-.play-music header {
+
+.play-music .play-music-header {
+  width: inherit;
+  height: 50px;
+  box-sizing: border-box;
+  max-width: 500px;
+  min-width: 500px;
+  background-color: #401b13;
+  padding: 0px;
+}
+
+.play-music-header-fixed {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: white;
   position: fixed;
   top: 0;
   width: inherit;
+  height: inherit;
   box-sizing: border-box;
   max-width: 500px;
   min-width: 500px;
+  background-color: #401b13;
+  padding: 10px 20px;
+}
+
+.play-music-header-fixed .header-right-icon {
+  justify-content: flex-end;
+}
+.play-music-header-fixed .header-right-icon > i {
+  margin-right: 20px;
+}
+
+.play-music-main {
+  padding: 10px 50px;
   background-color: #401b13;
 }
 
 .play-music-main-title {
   background-color: #401b13;
   width: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   color: white;
 }
 
 .play-music-main-title__img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .play-music-main-title__img img {
   width: inherit;
   height: inherit;
+  object-fit: cover;
 }
 
 .play-music-main-title__name {
   width: inherit;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 30px 0px;
+}
+.play-music-main-title__name > i {
+  font-size: 20px;
+  opacity: 0.6;
+}
+.play-music-main-title__name-info > span:nth-child(1) {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.play-music-main-title__name-info > span:nth-child(2) {
+  font-size: 1em;
+  opacity: 0.6;
 }
 
 .play-music-main-title__name > i:nth-child(1) {
@@ -54,4 +95,115 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.play-music-playbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.music-play-bar__time {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  margin-top: 10px;
+}
+.play-music-playbar input[type="range"] {
+  height: 4px;
+  margin: 0;
+  width: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  accent-color: white;
+}
+
+.play-music-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 20px 0px;
+}
+
+.play-music-button > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+.play-music-button > i {
+  font-size: 20px;
+}
+.play-music-button > div > i {
+  font-size: 30px;
+}
+
+.play-music-footer {
+  background-color: #401b13;
+  width: inherit;
+  height: 50px;
+}
+
+.play-music-footer-fixed {
+  background-color: #662c1d;
+  color: white;
+  position: fixed;
+  width: inherit;
+  height: inherit;
+  bottom: 0;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.play-music-footer-button {
+  display: flex;
+  height: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.play-music-footer-button span {
+  opacity: 0.7;
+}
+
+.play-music-header-fixed > div {
+  width: 33%;
+  height: inherit;
+}
+.play-music-header-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.play-music-header-type > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+.play-music-header-type > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  border-radius: 30px;
+}
+
+.play-music-header-left-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.play-music-header-type .on {
+  background-color: #662c1d;
 }
